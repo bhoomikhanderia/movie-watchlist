@@ -23,7 +23,7 @@ For mac os, run following commands to install node & yarn
 ---
 
 ```
-1. $ git clone git@github.com:bhoomikhanderia/movie-watchlist.git
+1. $ git clone https://github.com/bhoomikhanderia/movie-watchlist.git
 2. $ cd movie-watchlist
 3. $ yarn install
 ```
@@ -38,4 +38,4 @@ To run this app,
 $ yarn start
 ```
 
-Visit http://localhost:3000// to view output
+Visit http://localhost:3000/ to view output
