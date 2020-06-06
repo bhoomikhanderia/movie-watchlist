@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ResultCard from "./ResultCard";
 
+const API_KEY = process.env.REACT_APP_OMDB_KEY || "6dcd7e16";
+
 const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -11,7 +13,7 @@ const Add = () => {
     setQuery(e.target.value);
 
     fetch(
-      `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_KEY}&s=${e.target.value}&type=movie`
+      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${e.target.value}&type=movie`
     )
       .then(res => res.json())
       .then(data => {
